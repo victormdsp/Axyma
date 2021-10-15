@@ -24,6 +24,7 @@
 <section>
   <h2>Implementação do código</h2>
   <h3>Organização das pastas</h3>
+  <img src = "./AxymaImages/pastas.jpg">
   <p>Como pasta principal temos a Axyma-Teste.</p>
   <p>Olhando abaixo temos a pasta src, onde estão as pastas model e a pasta route.</p>
   <p>Dentro da pasta model temos os arquivos dos Schemas, checklist.ts com o Schema das checklists e history.ts com o Schema dos históricos.</p>
@@ -34,6 +35,7 @@
   <article>
     <h3>Schema checklist</h3>
     <p>Primeiramente foi importado o mongoose, em seguida criado a interface com os atributos que o documento iria receber, logo em seguida foi criado o Schema Checklist e setando as informações dos atributos.</p>
+    <img src = "./AxymaImages/checklist.jpg">
     <ul>
       <li>type: tipo do dado</li>
       <li>required: o dado não pode ser nulo</li>
@@ -45,6 +47,7 @@
   <article>
     <h3>Schema Histórico</h3>
     <p>Primeiramente foi importado o mongoose, em seguida criado a interface com os atributos que o documento iria receber, logo em seguida foi criado o Schema History e setando as informações dos atributos.</p>
+    <img src = "./AxymaImages/historico.jpg">
     <ul>
       <li>type: tipo do dado</li>
       <li>required: o dado não pode ser nulo</li>
@@ -57,15 +60,25 @@
 <section>
   <h2>Pasta Route</h2>
   <p>Dentro da pasta Route temos o arquivo formularios.ts com todas as rotas criadas (get "/", get "/history/:_id" ,post "/register_checklist", post "/answer/:_id", delete "remove/:_id"), cada uma com suas implementações.
+    <img src = "./AxymaImages/historicoRout.jpg">
+    <img src = "./AxymaImages/create.jpg">
+    <img src = "./AxymaImages/answer.jpg">
+    <img src = "./AxymaImages/delete.jpg">
 </section>
 
 <section>
   <h2>Arquivos de configurações</h2>
   <h3>app.ts</h3>
   <p>Arquivo principal, com a chamada das rotas e criação da aplicação<p>
+  <img src = "./AxymaImages/app.jpg">
   <h3>package.json</h3>
   <p>Configurações de pacotes instalados e formas para rodar o código, foi alterado o "start" para criar uma pasta dist com um arquivo app.js quando o código for buildade, "dev" para rodar o código com nodemon utilizando o arquivo dentro do src/app.ts</p>  onde ficam as alterações do TypeScript, dentro dessas configurações o "target" foi alterado para es6, "rootDir" para o arquivo ./src e o "outDir" para ./dist.</p>
+  <img src = "./AxymaImages/package.jpg">
   <h3>TypeScript</h3>
   <p>Arquivo onde ficam as alterações do TypeScript, dentro dessas configurações o "target" foi alterado para es6, "rootDir" para o arquivo ./src e o "outDir" para ./dist.</p>
+  <img src = "./AxymaImages/typeconfig.jpg">
 </section>
+
+<h2> Obrigado pela atenção e oportunidade! </h2>
+<p> Ass: Victor Martini Domingues </p>
 
