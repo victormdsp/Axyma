@@ -24,7 +24,7 @@
 <section>
   <h2>Implementação do código</h2>
   <h3>Organização das pastas</h3>
-  <p>Como pasta principal temos a Axyma.</p>
+  <p>Como pasta principal temos a Axyma-Teste.</p>
   <p>Olhando abaixo temos a pasta src, onde estão as pastas model e a pasta route.</p>
   <p>Dentro da pasta model temos os arquivos dos Schemas, checklist.ts com o Schema das checklists e history.ts com o Schema dos históricos.</p>
   <p>Dentro da pasta route temos um arquivo formularios.ts com todas as rotas do programa.</p>
