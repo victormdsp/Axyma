@@ -19,7 +19,6 @@ router.get("/history/:_id", async(req: Request, res: Response)=>{
 
     //Verificando se o id passado existe e armazena em uma variável;
     const form: object = await ChecklistModel.findById(req.params._id);
-    
     //Variávem para armazenar todos os objetos histórico;
     const historico: any = await HistoryModel.find({checklist: req.params._id})
     
@@ -27,7 +26,6 @@ router.get("/history/:_id", async(req: Request, res: Response)=>{
     if (!form){
         return res.status(404).send("Não foi possível encontrar o formulário.");
     };
-    
     //Verifica se há algum histórico na checklist passada;
     if(!historico){
         return res.status(400).send("Este formulário ainda não foi respondido.");
@@ -55,7 +53,6 @@ router.get("/history/:_id", async(req: Request, res: Response)=>{
             contadorRespostas ++;
         }
     }
-
     //Respostas do servidor;
     if(contadorRespostas > 0){
         return  res.status(200).send(historyDeposit);
@@ -120,7 +117,7 @@ router.post("/answer/:_id", async(req: Request, res: Response)=>{
     }
 
     //Validação se a answer fornecida não é nula ou seu tamanho menor do que 2 caractéres;
-    if(req.body.data == "" || req.body.name.length <= 2){
+    if(req.body.data == "" || req.body.data.length <= 2){
         return res.status(400).send("Resposta fornecida inválida!");
     }
 
