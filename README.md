@@ -84,6 +84,22 @@
   <img src = "./AxymaImages/typeconfig.jpg">
 </section>
 
+<section>
+  <h3>Fotos do funcionamento do código</h3>
+  <p> Inserindo um novo formulário: </p>
+  <img src = "./AxymaImages/formCriado.jpg">
+  <p> Inserindo respostas: </p>
+  <img src = "./AxymaImages/answersPost.jpg">
+  <p> Buscando histórico de respostas: </p>
+  <img src = "./AxymaImages/getHistorico.jpg">
+  <p> Removendo formulário: </p>
+  <img src = "./AxymaImages/deletead.jpg">
+  <p> Formulário no bando de dados: </p>
+  <img src = "./AxymaImages/mongoCheck.jpg">
+  <p> Histórico no bando de dados: </p>
+  <img src = "./AxymaImages/mongoHistorie.jpg">
+</section>
+
 <h2> Obrigado pela atenção e oportunidade! </h2>
 <p> Ass: Victor Martini Domingues </p>
 
